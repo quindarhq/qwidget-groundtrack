@@ -1,3 +1,8 @@
+# Program: .gitignore
+# Purpose: ignore subfolders when building the project
+# Author:  Ray Lai
+# Updated: Jun 20, 2016
+#
 # Logs
 logs
 *.log
