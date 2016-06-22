@@ -6,6 +6,7 @@ A stand alone version is included in the example subfolder.
 
 **REQUIRED MODULES**: <br />
 Once you download the quindar-groundtrack folder, you need to install a couple of modules, express and socket.io.  Type the following command in the example directory: 	
+	
 	1. npm install express <br />
 	2. npm install socket.io
 
@@ -13,6 +14,7 @@ Then, run server.js to open the local host port:
 	node server.js
 	
 **How to integrate the stand alone version to Quindar as a widget**  
+	
 	1. Copy directive, controller, and factory files, e.g. angular-groundtrack.js, app-groundtrack.js, and factory-groundtrack.js, to appropriate subfolders of the Quinder folder. <br />
 	2. Check the links and files the index.html file of the stand alone version uses.  You need to make sure these links and files are listed in the index.html of the Quindar.  Also check if the files are located in the correct folders. <br />
 	3. Open the main controller file, e.g. mainController.js, and make the following changes: <br />
