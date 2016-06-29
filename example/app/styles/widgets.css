@@ -1,5 +1,42 @@
 /* Style for widgets */
 
+/* Line Plot */
+.quindarlineplot {
+  width: 100%;
+  height: 100%;  
+  font-family: "Open Sans", Sans-serif;
+}
+
+.widget-container {
+  width: 100%;
+  height: 100%;
+  color: #FF6D00;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;	
+  padding: 20px 15px 15px 15px;
+  margin: 15px auto 30px auto;
+  border: 1px solid #ddd;
+  background: #242833;
+}
+
+.lineplotbutton {
+  font-family: "Open Sans", Sans-serif;
+  padding: 5px 10px;
+  background-color: #8B8C94;  
+  color: #FFFF00;
+  font-size: 10px;
+}
+
+.listlabel {
+  font-family: "Open Sans", Sans-serif;
+  padding: 5px 10px;  
+  color: #FF6D00;
+  background-color: #464954;
+  font-size: 10px;
+}
+/****************/
+
 /* Ground Track */
 .ocean {
   background: #111950; 	
@@ -24,6 +61,7 @@
 }
 
 .groundbutton {
+  font-family: "Open Sans", Sans-serif;	
   padding: 5px 10px;
   background-color: #CFCFD5;  
   color: #020613;

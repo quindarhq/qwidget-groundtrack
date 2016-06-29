@@ -5,11 +5,11 @@ angular.module('angular-groundtrack',['d3'])
 		  template: '<div class="quindarworldmap" width=100% - 100px -100px > \
 	                   <ul style="list-style-type:none"> \
 			            <li> \
-                         <button ng-click="goHome()"> HOME </button> \
-						 <button ng-click="connect()"> CONNECT </button>\
-						 <button ng-click="stream()"> STREAM </button> \
-						 <button ng-click="stop()"> STOP </button> \
-						 <button ng-click="clear()"> CLEAR </button> \
+                         <button class="groundbutton" ng-click="goHome()"> HOME </button> \
+						 <button class="groundbutton" ng-click="connect()"> CONNECT </button>\
+						 <button class="groundbutton" ng-click="stream()"> STREAM </button> \
+						 <button class="groundbutton" ng-click="stop()"> STOP </button> \
+						 <button class="groundbutton" ng-click="clear()"> CLEAR </button> \
 	                    </li> \
 				       </ul> \
 			         </div>',
