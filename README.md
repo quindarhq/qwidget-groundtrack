@@ -5,12 +5,10 @@ The aungular-groundtrack.js is a directive file that plot a world map, ground st
 A stand alone version is included in the example subfolder. 
 
 ## REQUIRED MODULES
-Once you download the quindar-groundtrack folder, you need to install a couple of modules, express and socket.io.  Type the following command in the example directory: 	
+Once you download the quindar-groundtrack folder, you need to run buildme.sh to install required modules. 	
 	
-1. npm install express
-1. npm install socket.io
-
-Then, run server.js to open the local host port: 
+## HOW TO RUN THE DEMO
+Go to the example folder and run server.js to open the local host port: 
   
     node server.js
 	
