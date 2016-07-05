@@ -5,7 +5,7 @@ The aungular-groundtrack.js is a directive file that plot a world map, ground st
 A stand alone version is included in the example subfolder. 
 
 ## Required modules
-Once you download the quindar-groundtrack folder, you need to run buildme.sh to install required modules. 	
+Once you download the quindar-groundtrack folder, you need to run buildme.sh in the example folder to install required modules. 	
 	
 ## How to run the demo
 Go to the example folder and run server.js to open the local host port: 
