@@ -4,15 +4,15 @@ Ground track (orbit trajectory) directive to display spacecraft vehicle's actual
 The aungular-groundtrack.js is a directive file that plot a world map, ground stations, and satellite trajectories.  The trajectory data is streamed through the SocketIO.  
 A stand alone version is included in the example subfolder. 
 
-## Required modules
+## Required Modules
 Once you download the quindar-groundtrack folder, you need to run buildme.sh in the example folder to install required modules. 	
 	
-## How to run the demo
+## How to Run the Demo
 Go to the example folder and run server.js to open the local host port: 
   
     node server.js
 	
-##How to integrate the stand alone version to Quindar as a widget 
+##How to Integrate the Stand Alone Version to Quindar 
 	
 1. Copy angular-groundtrack.js and factory-groundtrack.js to appropriate subfolders of the Quinder folder. 
 1. Check the links and files the index.html file of the stand alone version uses.  You need to make sure these links and files are listed in the index.html of the Quindar.  Also check if the files are located in the correct folders. 
