@@ -1,3 +1,8 @@
+// Program: angular-lineplot.js
+// Purpose: AngularJS line plot
+// Author: Masaki Kakoi
+// Updated: July 8, 2016
+// License: MIT license
 angular.module('angular-groundtrack',['d3'])
   .directive('groundtrack',['$timeout','d3',function($timeout, d3) {
 	  return {
@@ -16,8 +21,7 @@ angular.module('angular-groundtrack',['d3'])
 		  scope: {
 			audacy1: '&',
             audacy2: '&',
-            audacy3: '&',
-		          		
+            audacy3: '&',		          		
 		  },
 		  link: function(scope,element,attributes) {
 		  
@@ -109,7 +113,8 @@ angular.module('angular-groundtrack',['d3'])
 	           .attr("transform","translate(0,0)");   	
 	        };  
 			
-			var socket = io('ws://platform.audacy.space:7904');
+			var setPlatform='ws://'+platform+':'+port;
+			var socket = io(setPlatform);
       
 	        socket.on('connected', function(data) {
 	        alert("hi")
@@ -118,7 +123,7 @@ angular.module('angular-groundtrack',['d3'])
             socket.on('message', console.log.bind(console));	  
 	
 	        scope.connect = function () {
-		      alert("connect")
+		      alert(setPlatform)
 		      socket.emit('telemetry', {"type": 'position', "room": 'Audacy1'});	//Audacy1
 	          socket.emit('telemetry', {"type": 'position', "room": 'Audacy2'});    //Audacy2
 	          socket.emit('telemetry', {"type": 'position', "room": 'Audacy3'});    //Audacy3  
