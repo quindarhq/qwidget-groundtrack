@@ -3,7 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>Audacy Quindar angular-groundtrack example</title>	
+  <!-- replace googleapis font by minified version below 
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+  -->
+
+  <!-- build:css dist/groundtrack-thirdparty.css -->
+  <link rel="stylesheet" type="text/css" href="dist/groundtrack-thirdparty.css" />
+
+  <!-- custom CSS for groundtrack -->
   <link rel="stylesheet" href="app/styles/widgets.css" />
 </head>
 
@@ -12,13 +19,22 @@
     <groundtrack></groundtrack>
   </div>
 
+  <!-- replace googleapis font by minified version below 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.min.js"></script>
+  -->
+ 
+  <script src="dist/groundtrack-thirdparty.js"></script>
+
+  <!-- custom JS for groundtrack -->
   <script src="dist/angular-groundtrack.js"></script>
   <script src="app/controllers/app-groundtrack.js"></script>
   <script src="app/factories/factory-groundtrack.js"></script>
   <script src="config/clientSettings.js"></script>
   <script type="text/javascript" src="app/scripts/plugins/visualization/d3/topojson.js"  charset="utf-8"></script>
+
+  <!-- replace socket.io by minified version above 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>  
+  -->
 
 </body>
 </html>
