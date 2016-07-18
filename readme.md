@@ -66,16 +66,16 @@ The utility "nodemon" is similar to "node" (HTTP Web server), and it will automa
 ## How to Integrate with Quindar 
 Quindar is a real-time mission operations application produced by Audacy. You can add this ground track directive to grid-like window in Quindar as per the following steps:
 	
-1. Create a copy of Quindar-angular on your target host 
+* Create a copy of Quindar-angular on your target host 
   - e.g. git clone https://github.com/audacyDevOps/quindar-angular.git)
-1. Create a copy of Quindar-groundtrack on your target host under a separate folder.
-1. Copy the file quindar-groundtrack.js from quindar-groundtrack project to quindar-angular project
+* Create a copy of Quindar-groundtrack on your target host under a separate folder.
+* Copy the file quindar-groundtrack.js from quindar-groundtrack project to quindar-angular project
   - From quindar-groundtrack project folder "/dist" (https://github.com/audacyDevOps/quindar-groundtrack/tree/master/dist) 
   - To the quindar-angular project folder "/app/directives".
-1. Copy the file factory-groundtrack.js from quindar-groundtrack project to quindar-angular project.
+* Copy the file factory-groundtrack.js from quindar-groundtrack project to quindar-angular project.
   - From quindar-groundtrack project folder "/example/app/factories" (https://github.com/audacyDevOps/quindar-groundtrack/tree/master/example/app/factories)
   - To quindar-angular project folder "/app/factories"
-1. Edit the quindarWidgetsControllers.js (controller) to add the new widget quindar-groundtrack:
+* Edit the quindarWidgetsControllers.js (controller) to add the new widget quindar-groundtrack:
   - Add your widget definition in the $scope.widgetDefinitions:
 ```
    var widgetDefinitions = [
@@ -134,7 +134,11 @@ $scope.dashboards = [
 
 This will enable Quindar widget to render groundtrack widget on page 4, by specifying the directive name "groundtrack". 
 
-1. Update the JavaScript and CSS stylesheet in the file index.html
+* Add the controller quindarWidgetsControllers.js to include angular-groundtrack.js. Here is an example of the changes:
+  - var app = angular.module('app')
+  - Add angular-groundtrack as a dependency to the angular.module.
+
+* Update the JavaScript and CSS stylesheet in the file index.html
   - Your new AngularJS directive probably requires new JS/CSS files. You may want to review the current index.html
 to see if the versions are compatible.
   - quindar-groundtrack requires D3 and angular-d3 third party JS/CSS. They are consolidated and concatenated in the files "groundtrack-thirdparty.js" and "groundtrack-thirdparty.css" for convenience. Refer to https://github.com/audacyDevOps/quindar-groundtrack/tree/master/example/dist for details.
@@ -147,7 +151,7 @@ to see if the versions are compatible.
   <script src="config/clientSettings.js"></script>
 ```
 
-1. You can manually re-test your new quindar-angular mission operations application to verify if the application works as expected.
+* You can manually re-test your new quindar-angular mission operations application to verify if the application works as expected.
   - There will be some automated widget test scripts in the quindar-angular project.
   - You can run "nodemon server.js" and open a Web browser with the URL http://localhost:3000 to test the changes.
 
