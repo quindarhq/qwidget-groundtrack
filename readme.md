@@ -69,9 +69,11 @@ Quindar is a real-time mission operations application produced by Audacy. You ca
 * Create a copy of Quindar-angular on your target host 
   - e.g. git clone https://github.com/audacyDevOps/quindar-angular.git)
 * Create a copy of Quindar-groundtrack on your target host under a separate folder.
-* Copy the file quindar-groundtrack.js from quindar-groundtrack project to quindar-angular project
+* Copy the file angular-groundtrack.js from quindar-groundtrack project to quindar-angular project
   - From quindar-groundtrack project folder "/dist" (https://github.com/audacyDevOps/quindar-groundtrack/tree/master/dist) 
   - To the quindar-angular project folder "/app/directives".
+* Edit the file angular-groundtrack.js.
+  - Change "app/images/world-110m.json" to "../../images/world-110m.json".
 * Copy the file factory-groundtrack.js from quindar-groundtrack project to quindar-angular project.
   - From quindar-groundtrack project folder "/example/app/factories" (https://github.com/audacyDevOps/quindar-groundtrack/tree/master/example/app/factories)
   - To quindar-angular project folder "/app/factories"

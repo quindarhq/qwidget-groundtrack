@@ -105,7 +105,6 @@ angular.module('angular-groundtrack',['d3'])
             g.call(zoom)
              .on("mousedown.zoom",null);
 	   
-
             scope.goHome = function() {
               zoom.translate([0,0])
 	              .scale(1)
@@ -304,8 +303,7 @@ angular.module('angular-groundtrack',['d3'])
 			  }
 			
 			});
-	
-	 
+		 
         function transition(plane, route) {
           var l = route.node().getTotalLength();
           plane.transition()
@@ -337,9 +335,7 @@ angular.module('angular-groundtrack',['d3'])
         function projGround(d){
 	  
 	      return projection(d);
-        };
-  
-	  }
-	  
+        };  
+	  }	  
   };
 }]);
