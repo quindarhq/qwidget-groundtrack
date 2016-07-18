@@ -154,5 +154,5 @@ to see if the versions are compatible.
 
 # Known Constraints
 * Quindar-groundtrack has minimum width for massive data contents on the map, and thus it cannot be resized to smaller than 100px on the screen. Otherwise, it will impact user experience. It has a limited auto-resize capability (responsive map) due to the large canvas required to render the world map.  
-* Current quindar-groundtrack directive only allows GMAT as the data input source. In other words, it does not require passing other data source as attribute. In future, we can enhance the directive to accept different data sources by passing different data source attribute values (e.g. <groundtrack data="myDataSource">).
+* Current quindar-groundtrack directive only allows GMAT as the data input source. In other words, it does not require passing other data source as attribute. In future, we can enhance the directive to accept different data sources by passing different data source attribute values (e.g. \<groundtrack data="myDataSource"\>).
 
