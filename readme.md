@@ -134,7 +134,7 @@ $scope.dashboards = [
 
 This will enable Quindar widget to render groundtrack widget on page 4, by specifying the directive name "groundtrack". 
 
-1. Update the <script> and <link> CSS stylesheet in the file index.html
+1. Update the JavaScript and CSS stylesheet in the file index.html
   - Your new AngularJS directive probably requires new JS/CSS files. You may want to review the current index.html
 to see if the versions are compatible.
   - quindar-groundtrack requires D3 and angular-d3 third party JS/CSS. They are consolidated and concatenated in the files "groundtrack-thirdparty.js" and "groundtrack-thirdparty.css" for convenience. Refer to https://github.com/audacyDevOps/quindar-groundtrack/tree/master/example/dist for details.
