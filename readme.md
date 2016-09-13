@@ -26,7 +26,7 @@ You can refer to the installation instructions under https://nodejs.org/en/downl
 
 * You need to create a local copy of this project. For example,
 ```
-git clone https://github.com/audacyDevOps/quindar-groundtrack.git
+git clone https://github.com/quindar/quindar-groundtrack.git
 ``` 
 
 ## Dependencies
@@ -67,15 +67,15 @@ The utility "nodemon" is similar to "node" (HTTP Web server), and it will automa
 Quindar is a real-time mission operations application produced by Audacy. You can add this ground track directive to grid-like window in Quindar as per the following steps:
 	
 * Create a copy of Quindar-angular on your target host 
-  - e.g. git clone https://github.com/audacyDevOps/quindar-angular.git)
+  - e.g. git clone https://github.com/quindar/quindar-angular.git)
 * Create a copy of Quindar-groundtrack on your target host under a separate folder.
 * Copy the file angular-groundtrack.js from quindar-groundtrack project to quindar-angular project
-  - From quindar-groundtrack project folder "/dist" (https://github.com/audacyDevOps/quindar-groundtrack/tree/master/dist) 
+  - From quindar-groundtrack project folder "/dist" (https://github.com/quindar/quindar-groundtrack/tree/master/dist) 
   - To the quindar-angular project folder "/app/directives".
 * Edit the file angular-groundtrack.js.
   - Change "app/images/world-110m.json" to "../../images/world-110m.json".
 * Copy the file factory-groundtrack.js from quindar-groundtrack project to quindar-angular project.
-  - From quindar-groundtrack project folder "/example/app/factories" (https://github.com/audacyDevOps/quindar-groundtrack/tree/master/example/app/factories)
+  - From quindar-groundtrack project folder "/example/app/factories" (https://github.com/quindar/quindar-groundtrack/tree/master/example/app/factories)
   - To quindar-angular project folder "/app/factories"
 * Edit the quindarWidgetsControllers.js (controller) to add the new widget quindar-groundtrack:
   - Add your widget definition in the $scope.widgetDefinitions:
@@ -143,7 +143,7 @@ This will enable Quindar widget to render groundtrack widget on page 4, by speci
 * Update the JavaScript and CSS stylesheet in the file index.html
   - Your new AngularJS directive probably requires new JS/CSS files. You may want to review the current index.html
 to see if the versions are compatible.
-  - quindar-groundtrack requires D3 and angular-d3 third party JS/CSS. They are consolidated and concatenated in the files "groundtrack-thirdparty.js" and "groundtrack-thirdparty.css" for convenience. Refer to https://github.com/audacyDevOps/quindar-groundtrack/tree/master/example/dist for details.
+  - quindar-groundtrack requires D3 and angular-d3 third party JS/CSS. They are consolidated and concatenated in the files "groundtrack-thirdparty.js" and "groundtrack-thirdparty.css" for convenience. Refer to https://github.com/quindar/quindar-groundtrack/tree/master/example/dist for details.
   - You can refer to the /example/index.html as an example.
   - e.g. for quindar-groundtrack project, you will need to add the following files:
 ```
