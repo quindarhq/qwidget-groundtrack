@@ -1,4 +1,4 @@
-# quindar-groundtrack
+# qwidget-groundtrack
 Updated: Jul 18, 2016 by Ray Lai, Masaki Kakoi
 
 ## Summary
@@ -26,14 +26,14 @@ You can refer to the installation instructions under https://nodejs.org/en/downl
 
 * You need to create a local copy of this project. For example,
 ```
-git clone https://github.com/quindar/quindar-groundtrack.git
+git clone https://github.com/quindar/qwidget-groundtrack.git
 ``` 
 
 ## Dependencies
 * AngularJS
 * D3 (charts, graphics and maps library)
 
-Once you download the quindar-groundtrack project, you need to run buildme.sh in the example folder to install required module. Refer to the "How to Run the Demo" section for details. 	
+Once you download the qwidget-groundtrack project, you need to run buildme.sh in the example folder to install required module. Refer to the "How to Run the Demo" section for details. 	
 	
 ## How to Run the Demo
 * After creating a local copy of this project, run the script "buildme.sh" to install NodeJS dependencies and libraries:
@@ -68,16 +68,16 @@ Quindar is a real-time mission operations application produced by Audacy. You ca
 	
 * Create a copy of Quindar-angular on your target host 
   - e.g. git clone https://github.com/quindar/quindar-angular.git)
-* Create a copy of Quindar-groundtrack on your target host under a separate folder.
-* Copy the file angular-groundtrack.js from quindar-groundtrack project to quindar-angular project
-  - From quindar-groundtrack project folder "/dist" (https://github.com/quindar/quindar-groundtrack/tree/master/dist) 
+* Create a copy of Qwidget-groundtrack on your target host under a separate folder.
+* Copy the file angular-groundtrack.js from qwidget-groundtrack project to quindar-angular project
+  - From qwidget-groundtrack project folder "/dist" (https://github.com/quindar/qwidget-groundtrack/tree/master/dist) 
   - To the quindar-angular project folder "/app/directives".
 * Edit the file angular-groundtrack.js.
   - Change "app/images/world-110m.json" to "../../images/world-110m.json".
-* Copy the file factory-groundtrack.js from quindar-groundtrack project to quindar-angular project.
-  - From quindar-groundtrack project folder "/example/app/factories" (https://github.com/quindar/quindar-groundtrack/tree/master/example/app/factories)
+* Copy the file factory-groundtrack.js from qwidget-groundtrack project to quindar-angular project.
+  - From qwidget-groundtrack project folder "/example/app/factories" (https://github.com/quindar/qwidget-groundtrack/tree/master/example/app/factories)
   - To quindar-angular project folder "/app/factories"
-* Edit the quindarWidgetsControllers.js (controller) to add the new widget quindar-groundtrack:
+* Edit the quindarWidgetsControllers.js (controller) to add the new widget qwidget-groundtrack:
   - Add your widget definition in the $scope.widgetDefinitions:
 ```
    var widgetDefinitions = [
@@ -143,9 +143,9 @@ This will enable Quindar widget to render groundtrack widget on page 4, by speci
 * Update the JavaScript and CSS stylesheet in the file index.html
   - Your new AngularJS directive probably requires new JS/CSS files. You may want to review the current index.html
 to see if the versions are compatible.
-  - quindar-groundtrack requires D3 and angular-d3 third party JS/CSS. They are consolidated and concatenated in the files "groundtrack-thirdparty.js" and "groundtrack-thirdparty.css" for convenience. Refer to https://github.com/quindar/quindar-groundtrack/tree/master/example/dist for details.
+  - qwidget-groundtrack requires D3 and angular-d3 third party JS/CSS. They are consolidated and concatenated in the files "groundtrack-thirdparty.js" and "groundtrack-thirdparty.css" for convenience. Refer to https://github.com/quindar/qwidget-groundtrack/tree/master/example/dist for details.
   - You can refer to the /example/index.html as an example.
-  - e.g. for quindar-groundtrack project, you will need to add the following files:
+  - e.g. for qwidget-groundtrack project, you will need to add the following files:
 ```
   <script src="dist/angular-groundtrack.js"></script>
   <script src="app/controllers/app-groundtrack.js"></script>
@@ -159,6 +159,6 @@ to see if the versions are compatible.
 
 
 # Known Constraints
-* Quindar-groundtrack has minimum width for massive data contents on the map, and thus it cannot be resized to smaller than 100px on the screen. Otherwise, it will impact user experience. It has a limited auto-resize capability (responsive map) due to the large canvas required to render the world map.  
-* Current quindar-groundtrack directive only allows GMAT as the data input source. In other words, it does not require passing other data source as attribute. In future, we can enhance the directive to accept different data sources by passing different data source attribute values (e.g. \<groundtrack data="myDataSource"\>).
+* Qwidget-groundtrack has minimum width for massive data contents on the map, and thus it cannot be resized to smaller than 100px on the screen. Otherwise, it will impact user experience. It has a limited auto-resize capability (responsive map) due to the large canvas required to render the world map.  
+* Current qwidget-groundtrack directive only allows GMAT as the data input source. In other words, it does not require passing other data source as attribute. In future, we can enhance the directive to accept different data sources by passing different data source attribute values (e.g. \<groundtrack data="myDataSource"\>).
 
