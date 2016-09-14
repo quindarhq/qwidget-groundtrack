@@ -136,7 +136,7 @@ $scope.dashboards = [
 
 This will enable Quindar widget to render groundtrack widget on page 4, by specifying the directive name "groundtrack". 
 
-* Add the controller quindarWidgetsControllers.js to include angular-groundtrack.js. Here is an example of the changes:
+* Modify quindarWidgetsControllers.js to add 'angular-groundtrack' as a dependency. Here is an example of the changes:
   - var app = angular.module('app')
   - Add angular-groundtrack as a dependency to the angular.module.
 
